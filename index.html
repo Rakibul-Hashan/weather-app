@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card">
+      <form id="search-form">
+        <div class="search">
+          <div class="serach-texts">
+            <input
+              type="text"
+              id="search-field"
+              name="search"
+              placeholder="enter city name"
+              spellcheck="false"
+            />
+            <div id="result-box" class="result-box"></div>
+          </div>
+
+          <button><img src="images/search.png" /></button>
+        </div>
+      </form>
+      <div class="weather">
+        <img id="weather-image" src="images/rain.png" alt="Rain icon" class="weather-icon" />
+        <h1 id="temp" class="temp">22°c</h1>
+        <h2 id="city" class="city">New York</h2>
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" alt="Humidity icon" />
+            <div>
+              <p id="humidity" class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png" alt="Humidity icon" />
+            <div>
+              <p class="wind"><span id="wind">15</span> Km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
